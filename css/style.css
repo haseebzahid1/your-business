@@ -59,6 +59,15 @@
           font-family: 'Vanib';
           src: url("../font_link/vani/Vanib.ttf");
 }
+@font-face{
+    font-family:"MyriadPro-Light" ;
+    src: url("../font_link/MYRIADPRO/MyriadPro-Light.otf");
+}
+@font-face {
+          font-family: 'MYRIADPRO-REGULAR';
+          src: url("../font_link/MYRIADPRO/MYRIADPRO-REGULAR.OTF");
+}
+
 
 
 
@@ -95,9 +104,9 @@ a:hover{
     height: 100%;
     background-repeat: no-repeat;
 }
-.balance-mt-5{
+/* .balance-mt-5{
     padding-top: 118px;
-}
+} */
 
 .h1,.h2,.h3,.h4,.h5,.h6,.h7,.h8,.h9,.h10,.h11,.h12,.h13{
     font-size: 35px;
@@ -134,15 +143,17 @@ a:hover{
     -o-transition: all .1s ease;
     transition: all .1s ease;
     background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.6)
 }
 
 
 .header-appear .navbar-top-default {
-    height: 100px;
+    height: 80px;
     position: fixed;
     top: 0;
     z-index: 888;
-    background: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* background: #fff; */
     -webkit-animation-name: animationFade;
     animation-name: animationFade;
     -webkit-animation-duration: 1s;
@@ -172,6 +183,8 @@ a:hover{
 }
 .logo{
     width: 26%;
+    height: 60px;
+    object-fit: cover;
 }
 
 
@@ -180,7 +193,7 @@ a:hover{
     list-style: none;
 }
 .nav-a{
-    color: #484F5B;
+    color: #fff;
     padding-left: 17px;
     padding-right: 17px;
     font-size: 20px;
@@ -189,7 +202,7 @@ a:hover{
     transition:  all 0.3s ease;
 }
 .nav-a:hover{
-    color: #15171a;
+    color: #616366;
 }
 
 .menu-bar{
@@ -205,7 +218,7 @@ a:hover{
     left: 0;
     width: 30px;
     height: 2px;
-    background: #2b2b2b;
+    background: #fff;
     display: inline-block;
 }
 .menu-span:before,
@@ -219,13 +232,13 @@ a:hover{
 .menu-span:before{
     top: -7px;
     left: 0;
-    background: #2b2b2b;
+    background: #fff;
 }
 .menu-span:after{
     top: 7px;
     width: 15px;
     right: 0;
-    background: #2b2b2b;
+    background: #fff;
 }
 .menu-bar:hover .menu-span:before,
 .menu-bar:hover .menu-span:after{
@@ -357,7 +370,6 @@ a:hover{
     font-family: 'Helvetica';
     /* font-family: 'OpenSans-Regular'; */
     line-height: 35px;
-    letter-spacing: 10;
 }
 .team-inner{
     margin-top: 152px;
@@ -369,14 +381,21 @@ a:hover{
 }
 .team-card-content{
     text-align: center;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 36px;
+    padding-left: 36px;
 }
 .team-h2{
     margin-top: 47.4px;
     margin-bottom: 51.4px;
     font-size: 30.55px;
     font-family: 'Helvetica';
+    
+}
+.team-p2{
+    font-size: 20px;
+    font-family: 'Helvetica';
+    margin-bottom: 0;
+    line-height: 25px;
 }
 .counter-container{
     background-color: #103d4c;
@@ -400,7 +419,7 @@ a:hover{
 }
 .social-banner-container{
     background-image: url(../img/social-bg-img.png);
-    height: 1070px;
+    height: 777px;
 }
 .contact-container{
     padding-top: 295px;
@@ -455,14 +474,15 @@ a:hover{
     color: #fff;
     border: 1px solid #623621;
     font-size: 24px;
-    font-family: 'OpenSans-Regular';
+    font-family: 'MYRIADPRO-REGULAR';
     padding: 20.5px 61px;
     border-radius: 4px;
     letter-spacing: 3px;
 }
 .about-container{
-    /* padding-top: 353px; */
-    /* padding-bottom: 353px; */
+    padding-top: 353px;
+    padding-bottom: 353px;
+    background-image: url(../img/about-left-bg.png);
 }
 .about-left-img{
     width: 100%;
@@ -477,6 +497,9 @@ a:hover{
 .about-right-bottom-content{
     display: flex;
     justify-content: space-between;
+}
+.about-bg-color{
+    background-color: #eeecec;
 }
 .about-right-container{
     
@@ -525,9 +548,114 @@ a:hover{
     display: inline-block;
     padding: 15px 13px;
     font-size: 20px;
-    font-family: 'OpenSans-Regular';
+    font-family: 'MYRIADPRO-REGULAR';
     border: 1px solid gray;
 }
+
+.gallery-container{
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+.gallery-content{
+    text-align: center;
+}
+.gallery-h1{
+    color: #A95E39;
+    font-size: 72px;
+    font-family: 'Athelas-Regular';
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.gallery-p{
+    font-size: 30.55px;
+    font-family: 'OpenSans-Regular';
+    /* font-family: 'OpenSans-Regular'; */
+    line-height: 35px;
+    padding-bottom: 0px;
+}
+.gallery-images{
+    margin-top: 90px;
+}
+.gallery-col-2{
+    width: 100%;
+    max-width: 25%;
+}
+.gallery-img{
+    width: 100%;
+    padding-right: 20px;
+    height: 577px;
+}
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-bottom-color{
+    
+    background-color: #0d0d0eda;
+    width: 100%;
+    height: 75px;
+}
+.gallery .owl-theme .owl-dots button{
+    outline: none;
+    border: 1px solid transparent !important;
+    
+}
+.gallery .owl-theme .owl-nav{
+    position: absolute;
+    /* top: 45%; */
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 100%;
+    margin-top: 0 !important;
+     z-index: 22233;
+    
+  }
+  .gallery .owl-theme .owl-nav:hover{
+    background-color: transparent;
+  }
+  .gallery .owl-theme .owl-nav .owl-prev{
+    left: 32px;
+  }
+  .gallery .owl-theme .owl-nav .owl-next{
+    right: 32px;
+   }
+   .gallery .owl-theme .owl-nav .owl-prev,
+   .gallery .owl-theme .owl-nav .owl-next{
+    position: absolute;
+    display: block;
+   }
+   .gallery .owl-theme .owl-nav .owl-prev:hover,
+   .gallery .owl-theme .owl-nav .owl-next:hover{
+    background-color: transparent;
+    border: transparent;
+   }
+   .gallery .owl-theme .owl-nav .owl-prev span,
+   .gallery .owl-theme .owl-nav .owl-next span{ 
+    display: inline-block;
+    line-height: 0;
+    padding: 0;
+    line-height: 30px;
+    width: 40px;
+    height:40px ;
+    border-radius: 50px;
+    border: 1px solid #A95E39;
+    color: #A95E39;
+    /* color: #383838; */
+    font-size: 54px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+   }
+    .gallery .owl-theme .owl-nav .owl-prev span:hover,
+    .gallery .owl-theme .owl-nav .owl-next span:hover{
+        display: block;
+        /* border: 1px solid rgb(22, 159, 250); */
+        border: 1px solid #863f1c;
+        /* background-color: #09f;   */
+        color: #fff; 
+        background-color: #A95E39; 
+    }
 /* /---------------------------------------------- */
 
 @media (max-width:992px){
@@ -539,7 +667,8 @@ a:hover{
         width: 100%;
         max-width: 320px;
         height: 100vh;
-        background-color:#484F5B;
+        /* background-color:#484F5B; */
+        background-color: rgba(0, 0, 0, 0.8);
         padding-left: 20px;
         padding-right: 20px;
         transition:  all 0.3s ease-in-out;
@@ -547,11 +676,13 @@ a:hover{
     }
     .nav-a{
         color: #fff;
-        padding:8px 0px;
+        padding:8px 12px;
         display: block;
+        
     }
     .nav-a:hover{
         color: rgb(216, 215, 215);
+        background-color: #616366;
     }
     
 }
@@ -577,8 +708,10 @@ a:hover{
   .footer-title{
    font-size: 25px;
    color: #fff;
-   letter-spacing: 10;
-   margin-bottom: 16px;
+   margin-bottom: 27px;
+   font-family: 'MYRIADPRO-REGULAR';
+   text-transform: uppercase;
+   padding-left: 12px;
   }
   .footer-text-span,
   .footer-link,
@@ -597,43 +730,40 @@ a:hover{
   .footer-ul{
       list-style: none;
       padding-left: 0;
+      padding-left: 12px;
+      padding-right: 12px;
+      margin-bottom: 0;
   }
-  
   .footer-a{
       color: #fff;
       letter-spacing: 10;
-      font-size: 16.67px;
+      font-size: 23.67px;
       display: block;
+      font-family: 'MYRIADPRO-REGULAR';
   }
   .footer-a:hover,
   .footer-link:hover{
       color: rgb(216, 212, 212);
   }
- 
-  .footer-copyright{
-      margin-top: 26.7px;
-      line-height: 29.7px;
+
+  .footer-location{
+      display: flex;
   }
-  .footer-social-icon{
-      margin-top: 32.1px;
+  .footer-find,
+  .footer-num-span{
+    font-size: 16px;
+      display: block;
+      color: #fff;
+      font-family: 'MYRIADPRO-REGULAR';
   }
-  .footer-social-icon-a{
-    color: #484F5B;
-    background-color: #fff;
-    display: inline-block;
-    width: 21.47px;
-    height: 22.28px;
-    text-align: center;
-    line-height: 22px;
-    font-size: 13px;
-    border-radius: 2px;
-    margin-right: 26.1px;
-    transition: all 0.3s ease-in-out;
+  
+  .footer-location{
+      margin-top: 16px;
   }
-  .footer-social-icon-a:hover{
-    background-color: rgb(156, 156, 156);
-    color: #fff;
+  .footer-find{
+      padding-right: 20px;
   }
+  
 
     .margin-top-0{
         margin-top: 0;
@@ -641,7 +771,43 @@ a:hover{
     .mmb-0{
         margin-bottom: 0 !important;
     }
-
+    .footer-bottom{
+        background-color: #000000;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        object-fit: 26px;
+    }
+    .footer-bottom-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-social-icon{
+        display: flex;
+        align-items: center;
+    }
+    .footer-social-icon-a{
+        /* background-color: #fff; */
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        border-radius: 2px;
+        margin-right: 8.1px;
+        transition: all 0.3s ease-in-out;
+        color: #fff;
+        border: 1px solid #fff;
+        font-family: 'MYRIADPRO-REGULAR';
+      }
+      .footer-social-icon-a:hover{
+        background-color: rgb(156, 156, 156);
+        color: #fff;
+      }
+      .footer-copyright{
+          display: block;
+          line-height: 60px;
+      }
 /* /////////////////////////////////////////////jkuytrytry */
 
 
@@ -649,12 +815,144 @@ a:hover{
 
 
 @media(max-width:1400px){
+    .your-website{
+        height: 70px;
+    }
+    .navbar-top-default{
+        top:70px ;
+    }
    
+    
+    .company-container{
+        min-height: 512px;
+    }
+    .company-h1{
+        font-size: 52px;
+        line-height: 50px;
+    }
+    .team-p{
+        font-size: 22px;
+        line-height:30px;
+    }
+    .company-content{
+        bottom: 50px;
+    }
+    .company-p{
+        font-size: 35px;
+    }
+    .team-container{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .team-h1{
+        font-size: 50px;
+        margin-bottom: 45px;
+    }
+    .team-horizontal-line{
+        top: 75px;
+    }
+    .team-inner{
+        margin-top: 60px;
+    }
+    .team-card-img{
+        height: 320px;
+    }
+    .team-h2{
+        font-size: 24.55px;
+        margin-top: 22.4px;
+        margin-bottom: 24.55px;
+    }
+    .team-card-content{
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    
+
+    .counter-container{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .counter-h1{
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+    .counter-p{
+        font-size: 19.58px;
+    }
+    .contact-container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .contact-h1{
+        font-size:41px;
+        margin-bottom: 20px;
+    }
+    .contact-p{
+        font-size: 20.61px;
+        line-height: 35px;
+        margin-bottom: 50px;
+    }
+    .row-2{
+        margin-top: 40px;
+    }
+    .form-btn{
+        margin-top: 45px;
+    }
+    .form-btn a{
+        font-size: 20px;
+        padding: 10.5px 35px;
+    }
+    .about-right-container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .about-left-img{
+        height: 457px;
+    }
+    .about-h1{
+        font-size: 42px;
+        margin-bottom: 25px;
+    }
+    .about-mt{
+        margin-top: 40px;
+    }
+    .about-radius-img{
+        max-width: 110px;
+        height: 110px;
+    }
+    .about-right-span{
+        font-size: 16px;
+        padding: 13px 12px;
+    }
+    .about-container{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .social-banner-container{
+        height: 570px;
+    }
+    .gallery-container{
+        padding-top: 45px;
+    }
+    .gallery-h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .gallery-p{
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .gallery-images{
+        margin-top: 48px;
+    }
+    .gallery-img{
+        height: 332px;
+    }
     .footer-title{
         font-size: 22px;
     } 
     .footer-a{
-        font-size: 14px;
+        font-size: 18px;
     }
 
 
@@ -665,18 +963,103 @@ a:hover{
 
 
 
- @media(max-width:1200px){
-    
-    
- }
- 
-
-
-
-
  @media(max-width:992px){
-
-  
+     .team-container{
+         padding-top: 40px;
+         padding-bottom: 40px;
+     }
+     .team-h1{
+         font-size: 32px;
+         margin-bottom: 25px;
+     }
+     .team-p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+     .team-horizontal-line{
+         top: 50px;
+         max-width: 228px;
+     }
+     .team-inner{
+         margin-top: 35px;
+     }
+     .team-card-img{
+         height: 220px;
+     }
+    .team-card-content{
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+    .team-h2{
+        font-size: 21.55px;
+        margin-top: 18.55px;
+        margin-bottom: 19.55px;
+    }
+    .team-p2{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .form-input{
+        font-size: 16px;
+    }
+    .form-input::placeholder{
+        font-size: 16px;
+    }
+    .form-btn a{
+        padding: 8.5px 19px;
+        font-size: 16px;
+    }
+    .about-bg-color{
+        margin-top: 30px;
+    }
+    .about-left-img{
+        height: 358px;
+    }
+    .social-banner-container{
+        height: 490px;
+    }
+    .gallery-h1{
+        font-size: 36px;
+    }
+    .gallery-p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .gallery-images{
+        margin-top: 20px;
+    }
+    .gallery-img{
+        height: 180px;
+    }
+    .gallery-bottom-color{
+        height: 50px;
+    }
+    .gallery .owl-theme .owl-nav{
+        bottom: -6px;
+    }
+    .gallery .owl-theme .owl-nav .owl-prev span,
+   .gallery .owl-theme .owl-nav .owl-next span{ 
+       font-size: 32px;
+       height: 30px;
+       width: 30px;
+       line-height: 20px;
+   }
+  .footer-container{
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  .footer-title{
+      margin-bottom: 15px;
+  }
+   .footer-bottom-row{
+    flex-direction: column;
+    justify-content: center;
+  }.footer-copyright{
+      text-align: center;
+  }
+  .footer-social-icon{
+      justify-content: center;
+  }
     
  }
 
@@ -684,7 +1067,20 @@ a:hover{
 
 
  @media(max-width:768px){
-  
+     
+    .counter-content{
+        margin-top: 22px;
+    }
+    .counter-mt-0{
+        margin-top: 0px;
+    }
+    .counter-h1{
+        line-height: 48px;
+    }
+    .col-mt-3{
+        margin-top: 40px;
+    }
+    
  }
 
 
@@ -692,8 +1088,73 @@ a:hover{
 
 
  @media(max-width:576px){
-    
-  
+     .company-container{
+         height: 390px;
+     }
+     .company-content{
+        right: 80px;
+     }
+  .company-h1{
+      font-size: 32px;
+  }
+  .company-p{
+      font-size: 23px;
+  }
+  .team-h1{
+      font-size: 26px;
+      margin-bottom: 19px;
+  }
+  .team-horizontal-line{
+      top: 40px;
+      max-width: 160px;
+  }
+  .team-p{
+      font-size: 16px;
+  }
+  .team-card-img{
+      height: 170px;
+  }
+  .team-h2{
+      margin-bottom: 13.55px;
+  }
+  .counter-container{
+      padding-top: 30px;
+      padding: 30px;
+  }
+  .counter-h1{
+      font-size: 35px;
+      line-height:39px;
+  }
+  .counter-p{
+      font-size:16.58px;
+  }
+
+  .contact-h1{
+      font-size: 30px;
+      margin-bottom: 20px;
+  }
+  .contact-p{
+      font-size: 15.61px;
+      line-height: 26px;
+      margin-bottom: 40px;
+  }
+  .social-banner-container{
+      height: 370px;
+  }
+  .about-left-img{
+      height: 230px;
+  }
+  .about-h1{
+      font-size: 32px;
+  }
+  .gallery-container{
+      padding-bottom: 30px;
+  }
+  .gallery-h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
    .footer-container{
         padding-top: 42px;
         padding-bottom: 35px;
@@ -701,5 +1162,10 @@ a:hover{
     .footer-text-span{
         margin-top: 13px;
         margin-bottom: 19px;
+    }
+    .footer-copyright{
+        line-height: 26px;
+        margin-bottom: 15px;
+        font-size: 14px;
     }
  }
