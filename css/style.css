@@ -801,8 +801,8 @@ a:hover{
         font-family: 'MYRIADPRO-REGULAR';
       }
       .footer-social-icon-a:hover{
-        background-color: rgb(156, 156, 156);
-        color: #fff;
+        background-color: rgb(236, 236, 236);
+        color: rgb(34, 33, 33);
       }
       .footer-copyright{
           display: block;
