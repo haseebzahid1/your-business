@@ -202,7 +202,7 @@ a:hover{
     transition:  all 0.3s ease;
 }
 .nav-a:hover{
-    color: #616366;
+    color: #d4d6d8;
 }
 
 .menu-bar{
@@ -446,7 +446,7 @@ a:hover{
     /* text-transform: uppercase; */
 }
 .row-2{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .form-input{
     width: 100%;
@@ -459,6 +459,8 @@ a:hover{
     color: #8F8F8F;
     font-size: 22px;
     font-family: 'Quattrocento-Regular';
+    padding-right: 4px !important;
+    padding-left: 3px !important;
 }
 .form-input::placeholder{
     color: #8F8F8F;
@@ -478,6 +480,12 @@ a:hover{
     padding: 20.5px 61px;
     border-radius: 4px;
     letter-spacing: 3px;
+    transition:  all 0.3s ease-in-out;
+}
+.form-btn a:hover{
+    background-color: #fff;
+    color: #89553B;
+    border: 1px solid rgb(226, 226, 226);
 }
 .about-container{
     padding-top: 353px;
@@ -536,7 +544,7 @@ a:hover{
 .about-radius-img:before{
     content: '';
     position: absolute;
-    bottom: -19%;
+    bottom: -26px;
     left: 50%;
     transform: translate(-50%,0%);
     width: 3px;
@@ -892,8 +900,12 @@ a:hover{
         line-height: 35px;
         margin-bottom: 50px;
     }
+    .input-select{
+        display: inline-block;
+     
+    }
     .row-2{
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .form-btn{
         margin-top: 45px;
